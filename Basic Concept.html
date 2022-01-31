@@ -1,0 +1,343 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f4f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6d;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="home.html">Home</a>
+  <a href="cont.html">Topics</a>
+  <a href="log in.html">Log In</a>
+  <a href="cred.html">Contact</a>
+</div>
+
+<div style="padding-left:16px">
+  </div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="Evolution.html">Evolution</a>
+  <a href="Basic Concept.html">Basic Networking Concept</a>
+  <a href="concept2.html">Networking Concepts-II</a>
+  <a href="net concept.html">Network Protocol</a>
+  <a href="web pro.html">Web Architecture</a>
+  <a href="no5.html">Network threats and Security Measures</a>
+</div>
+
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+</body>
+</html> 
+
+</body>
+</html>
+<html>
+<head>
+<title>
+Basic Networking Concepts
+</title>
+</head>
+<body bgcolor="#ffffe0">
+<u><center><h1>Basic Networking Concepts</h1></center></u>
+<br>
+<br>
+A network is any collection of independent computers that communicate with one
+another over a shared network medium.
+<br>
+We will learn about following things in this topic:-
+<ol>
+<li>Need for Networking</li>
+<li>Requirements of a network</li>
+<li>Network Terminologies</li>
+<li>Switching Techniques</li>
+<li>Data communication terminologies</li>
+<li>Network Types</li>
+</ol>
+
+<ol>
+<table>
+<tr>
+<td>
+<a name="#a">
+<h2><li>Need for Networking</h2></li></a>
+<ul>
+<li><b>Resource Sharing</b>: Connecting computers through networking allows us to
+share hardware and software resources. Examples of hardware resources
+include peripherals (for example, printers and scanners), CPU, and memory.
+Examples of software resources include system and application software, and
+files that may include text, audio, and video content.</li>
+<li><b>Communication</B>: Connecting computers through a network facilitates exchange
+of information amongst the nodes in the network.Creation
+of a network requires various network devices such as modems, routers,
+switches, and bridges, each of which plays a specific role in the network.
+Networks differ on the basis of transmission media used, arrangement of nodes
+in the network, their geographical span, and their purpose.</li>
+<li><b>Access to remote databases</b>: It is easy for an average person to access any
+remote database, say for example airline reservations and thereby book tickets.
+Likewise databases of trains, online universities, hotels etc can be accessed as
+per the requirement. Remote-control/access programs can be used to
+troubleshoot problems or show new users how to perform a task</li>
+</ul></td>
+<td><img height = 240 width= 350 src="computer-network-t.jpg"></td>
+</tr>
+<tr>
+<td>
+<h2><a name="#b"><li>Requirements of a network</h2></a>
+<ul>Every network includes:<br>
+<li> At least two computers</li>
+<li> Network Interface Cards (NIC) A connection medium, usually a wire or cable,
+although wireless communication between networked computers and peripherals is also possible.</li>
+<li> Network Operating system software, such as Microsoft Windows NT or 2000 Novell NetWare, Unix and Linux.</li>
+</ul></td>
+<td><img height = 240 width= 350 src="Hierarchical-Campus-Network-Architecture-51-Requirement-of-the-proposed-Campus-Network.png"></td>
+</tr>
+<tr>
+<td>
+<a name="#c">
+<h2><li> Network Terminologies</li></h2></a>
+<ul>
+<li><b> Nodes (Workstations)</b> :-A computer becomes a node (also called a
+workstation) as soon as it is attached to a network.
+ Each user on a network works on a workstation. If there are no nodes there would be no network.</li>
+<li><b>Server</b>:-A computer that facilitates sharing of data, software and hardware resources
+s known as the server. A network can have more than one server also.</li>
+<ul>
+Servers can be of two types:-<br>
+<li>Dedicated Server</li>
+<li>Non-Dedicated Server</li>
+</ul>
+<li><b>Network Interface Unit (NIU)</b>:- A network interface unit is a device that is attached
+to each of the workstations and the server which helps to establish communication
+between the server and workstations.The NIC basically acts like an interpreter and is also
+known as Terminal Access Point (TAP) or Network Interface card(NIC).The NIC
+manufacturer assigns a unique physical address to each NIC card and this physical
+address is known as the MAC address.</li>
+</ul></td>
+<td><img height = 240 width= 350 src="comm-cell-network-001.jpg"></td>
+</tr>
+<tr>
+<td>
+<a name="#d"><h2>
+<li>Switching Techniques</h2></li></a>
+<ul>Switching techniques are used to efficiently transmit data across the network. The two
+types of switching techniques employed nowadays to provide communication between
+two computers on a network are: 
+<li><b>Circuit Switching </b>is a technique in which a dedicated and complete physical
+connection is established between two nodes and through this dedicated
+communication channel, the nodes may communicate. The circuit guarantees the
+full bandwidth of the channel and remains connected for the duration of the
+communication session. Even if no communication is taking place in a dedicated
+circuit, that channel still remains unavailable to other users (idle channels). The
+defining example of a circuit-switched network is the early analogue telephone
+network. When a call is made from one telephone to another, switches within the
+telephone exchange create a continuous wire circuit between the two
+telephones, for as long as the call lasts.
+</li>
+<br>
+<li>
+<b>Packet switching</b> is a switching technique in which packets (discrete blocks of
+data of fixed size and of any content, type or structure) are routed between
+nodes over data links shared with other traffic. The term "packets" refers to the
+fact that the data stream from your computer is broken up into packets of about
+200 bytes (on average), which are then sent out onto the network. Each packet
+contains a "header" with information necessary for routing the packet from
+source to destination. Each packet in a data stream is independent. The main
+advantage of packet-switching is that the packets from many different sources
+can share a line, allowing for very efficient use of the communication medium.
+With current technology, packets are generally accepted onto the network on a
+first-come, first-served basis. If the network becomes overloaded, packets are
+delayed or discarded ("dropped").
+</li>
+</ul>
+</td>
+<td><img height = 240 width= 350 src="switching-techniques-packet-switching.png">
+</td>
+</tr>
+<tr>
+<td>
+<a name="#e">
+<h2><li>Data communication terminologies</h2></li></a>
+<ul>
+Let us learn about some data communication terminologies being used.
+<li><b>Channel</b>: A communication channel is a medium that is used in the transmission
+of a message from one point to another. In simple terms we can say that it is a
+pathway over which data is transferred between remote devices. It may refer to
+the entire physical medium, such as a telephone line, optical fibre, coaxial cable
+or twisted pair wire, or, it may refer to one of the several carrier frequencies
+transmitted simultaneously within the line. Depending on their speed, we have
+three broad categories of communication channels - narrow band which is slow
+and used for telegraph lines and low speed terminals; voice band used for
+ordinary telephone communication and broadband which is fastest and is used
+for transmitting large volumes of data at high speeds.</li>
+<br>
+<li><b>Bandwidth</b>: In electronic communication, bandwidth refers to the range of
+frequencies available for transmission of data. It is expressed as the difference in
+Hertz(Hz) between the highest frequency and the lowest frequency. For example,
+a typical voice signal has a bandwidth of approximately 3KHz. Wider the
+bandwidth of a communication system, greater is the capacity and hence greater
+is the amount of data that can be transmitted over a period of time.</li>
+<br>
+<li><b> The data transfer rate (DTR)</b> is the amount of data in digital form that is moved
+from one place to another in a given time on a network. As studied before, the
+greater the bandwidth of a given medium, the higher is the data transfer rate.
+This can also be referred to as throughput, although data transfer rate applies
+specifically to digital data streams. Data transfer rate is often measured in bits
+per second (bps), although the unit baud , which is one bit per second is also
+used. It is commonly used to measure how fast data is transferred from one
+location to another. For example, your ISP may offer an Internet connection with
+a maximum data transfer rate of 4Mbps.</li>
+</ul></td>
+<TD><img height = 240 width= 350 src="Networks-Collection-img-final-f2c265a59e457f48645e2aa3ff90e942.jpg"></td>
+</tr>
+<tr>
+<td>
+<a name="#f">
+<h2><li>Network Types</h2></li></a>
+<ul>
+On the basis of geographical span, the network can be broadly categorized as PAN,
+LAN, MAN, and WAN.
+<li><b> Personal Area Network</b><br>
+A personal area network (PAN) is a computer network used for communication among
+computers and devices close to one person. Some examples of devices that are used in
+a PAN are personal computers, printers, fax machines, telephones, PDAs, scanners,
+and even video game consoles. A PAN may include wired and wireless devices. The
+reach of a PAN typically extends to 10 meters.</li>
+<li>
+<b> Local Area Network</b><br>
+Local Area networks (LAN) are private networks and can span a radius of up to 1 Km.
+They are generally established within a building or campus.LANs operate at a speed in
+the range 10 Mbps to 1 Gbps.</li>
+<li><b> Metropolitan Area Network</b><br>
+Metropolitan Area Network (MAN) may be owned by a single organization or by many
+individuals or organizations. These networks are used to establish links within a city,
+and span an area of radius up to 50 Km. MANs facilitate sharing of resources by
+connecting various local area networks For example, a cable television network within a
+city.</li>
+<li><b> Wide Area Network</b><br>
+Wide Area Network (WAN) spans about 1000 Km. They are used for long distance
+communication and are well suited for connecting remote areas. They establish links
+within a country or continent. A WAN may be owned and managed by several
+organizations. It connects various local and metropolitan area networks.</li>
+</td>
+<td><img height = 240 width= 350 src="CN.png"></td>
+</tr>
+</table>
+</ul>
+</ol><br>
+<br>
+<br>
+
+<center>
+<div class="row">
+<div class="column" style="background-color:black">
+<font  color="white">
+<footer>
+<form><br><br>
+<a href="Evolution.html">
+<input  style="height:40px;width:100px" type=reset value="Previous">
+<a href="concept2.html">
+<input  style="height:40px;width:100px" type=submit value="Next">
+</a>
+</form>
+Go to <a href=" home.html ">Home</a><br>
+Contact us <a href="mailto:rachitagarwal2005@gmail.com?subject=Further query">here</a>
+<br><br></footer>
+</font>
+</div>
+</div>
+</center>
+</body>
+</html>
+
+
+

@@ -1,0 +1,377 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f4f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6d;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="home.html">Home</a>
+  <a href="cont.html">Topics</a>
+  <a href="log in.html">Log In</a>
+  <a href="cred.html">Contact</a>
+</div>
+
+<div style="padding-left:16px">
+  </div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="Evolution.html">Evolution</a>
+  <a href="Basic Concept.html">Basic Networking Concept</a>
+  <a href="concept2.html">Networking Concepts-II</a>
+  <a href="net concept.html">Network Protocol</a>
+  <a href="web pro.html">Web Architecture</a>
+  <a href="no5.html">Network threats and Security Measures</a>
+</div>
+
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+</body>
+</html> 
+
+</body>
+</html>
+
+<html>
+<head>
+<title>
+Web Architecture
+</title>
+</head>
+<body bgcolor="#ffffe0">
+<h1><center><u>Web Architecture</u></center></h1>
+<br>
+<br>
+<p>
+Web Architecture can be defined as the conceptual structure of the internet. The WWW
+or internet is a constantly changing medium that enables communication between
+different users and the technical interaction between different systems and
+subsystems. The infrastructure of the internet is made of three core components of data
+transmission protocols (TCP/IP, HTTP, HTTPS), representation formats (HTML, CSS,
+XML), and addressing standards (URI, URL).
+</p><br>
+<b>Origin of web architecture</b><br>
+The world wide web is a concept that was realized in the 1990s so that people and
+machines could communicate with each other within a certain space. It is used to
+exchange, distribute, and share information in a network. At that time, the web
+consisted predominantly of static websites based on HTML, in other words, hypertexts
+that can be retrieved by a browser. Dynamic websites and distributed web services
+were added later.
+
+<ol><h3>Types of web architectures</h3>
+<table><tr>
+<td>
+<li><b>Client-server model</b>
+<br>
+Initially, the web consisted of a two-tiered architecture: clients and servers. Clients and
+servers shared the tasks and services that the system was supposed to perform. For
+example, the client may request a service from the server; the server answers the
+request by providing the service. Retrieving a website using a URL address that directs
+a server to load the site in the client’s browser is an example of the two-layer model,
+also known as the client-server model.<BR>
+
+The internet protocol family, which now consists of around 500 different network
+protocols, is usually used as the basis for the WWW, but it usually comprises the
+TCP/TCP/IP reference model. Three prerequisites must exist in the web architecture for
+the application systems to communicate with one another:<br>
+<ul>
+<li> Representation formats with a fixed standard: The most frequently used formats
+are HTML(HyperText Mark Up Language) , CSS(Cascading Style Sheet) or XML
+(Extensible Mark up Language )when machines communicate with one another.</li>
+
+<li> Protocols for data transfer: HTTP (Hypertext Transfer Protocol) or HTTPS
+(Hypertext Transfer Protocol Secure) is used in the web. Other applications, such
+as mail servers, use SMTP (Simple Mail Transfer Protocol) or POP (Post Office
+Protocol).
+</li>
+<li>
+ The standard for addressing: This refers to the URL (Uniform Resource Locator)
+which is an instance of the more general concept of URI.
+</li>
+<br>
+Finally, the web architecture is the operational structure of application systems for data
+storage, data transmission, and presentation. When transferred to the web, the web
+architecture typically consists of database servers that manage the data and resources.
+They communicate with a client using a transfer protocol that can retrieve the data and
+view it in a browser. The representation is usually done with HTML and CSS.
+<br>
+</ul>
+</li>
+</td>
+<td><img height = 240 width= 350 src="download.png"></td>
+</tr>
+<tr>
+<td>
+<li><b> Three-tier model</b>
+<br>
+Three-tier models include an application logic between the client and the server, which
+handles the data processing and allows a certain degree of interaction. For example, an
+application server can process data while a database server is dedicated solely to data
+storage. In this way, content can be dynamically loaded and saved. The script language
+<p>JavaScript is often responsible for the behavior of the client.
+Generally, a distinction is made between server-side and client-side data processing.
+Dynamic websites are characterized by the fact that content is changed on the client
+side. On the server side, modified content is stored via the application server on the
+database server. Optionally, this can be a virtual server that emulates a physical one.
+There are different programming languages and frameworks to implement three-tier
+models like :-</p>
+<ul>
+<li> Hypertext Preprocessor (PHP)</li>
+<li> Common Gateway Interface (CGI)</li>
+<li> JavaServer Pages (JSP)</li>
+<li> Active Server Pages (ASP.NET)</li>
+<li> Java applets, JavaScript and VBScript (client-side technologies)</li>
+</ul></li>
+</td>
+<td><img height = 240 width= 350 src="download.jpg"></td>
+</tr>
+<tr>
+<td>
+<li><b> Service-oriented architectures (SOA)</b>
+<p>
+Today the web is used for the networking of globally distributed IT structures. Modern IT
+and web applications are much more complex than the client-server model. With SOAs,
+business processes can be automated by the involved systems communicating with one
+another - partly without human intervention - and performing certain tasks. Examples
+include online banking, e-commerce, e-learning, online marketplaces, and business
+intelligence applications. They are known as N-tier architectures and have so far been
+used primarily in the business sector.</p>
+<p>If the Web architecture was represented as an evolutionary timeline, IoT and Semantic
+Web would be the top of the development. The architectures that are used there are
+correspondingly complex.</p>
+<p>The effects of different architectures are extremely diverse. From a user perspective,
+websites and web services are changing to a degree that not even developers can keep
+track of, what with hundreds of protocols, programming and scripting languages,
+frameworks and interfaces. Websites become interactive, data can be exchanged
+faster, and services interact with each other easily. From a developer’s perspective,
+web architectures are becoming more and more complex and many different
+approaches exist at the same time.</p>
+<br></li>
+</ol></td>
+<td><img height = 240 width= 350 src="images.png"></td>
+</tr>
+</table>
+<h2> Identification of computers and users over a network</h2>
+<ul>
+<table>
+
+<tr>
+<td>
+<li><b> MAC Address</b><p>
+Once a network has been set up, the nodes can communicate among themselves. But
+for proper communication, the nodes should be uniquely identifiable. If a node X sends
+some information for node Y on a network, then it is mandatory that nodes X and Y are
+uniquely identifiable on the network. Let us see how this is achieved.Each NIC has a
+universally unique address assigned to it by its manufacturer. This address is known as
+the MAC (Media Access Control) address of the card. It means that a machine with an
+NIC can be identified uniquely through its NIC's MAC address. The MAC address of an
+NIC is permanent and does not change.</p>
+MAC addresses are 12-digit hexadecimal (or 48 bit) numbers. By convention, MAC
+addresses are usually written in one of the following two formats:
+MM:MM:MM:SS:SS:SS
+MM-MM-MM-SS-SS-SS
+The first half (MM:MM:MM) of a MAC address contains the ID number of the adapter
+manufacturer. The second half (SS:SS:SS) of a MAC address represents the serial
+number assigned to the adapter (NIC) by its manufacturer.
+For example, in the following MAC address,
+00:A0:C9 : 14:C8:35
+The prefix 00:A0:C9 indicates that the manufacturer is Intel Corporation. And the last
+three numbers 14:C8:35 are given by the manufacturer (Intel in this example) to this
+NIC.</li>
+</td>
+<td><img height = 240 width= 350 src="download (1).png"></td>
+</tr>
+<tr>
+<td>
+<li> <b>IP Address</b>
+Every machine in a network has another unique identifying number, called its IP
+Address. An IP address is a group of four bytes (or 32 bits) each of which can be a
+number from 0 to 255. A typical IP address looks like this:
+59.177.134.72
+To make it easier for us to remember, IP addresses are normally expressed in decimal
+format as a "dotted decimal number" like the one above.
+On a network, the IP address of a machine, and not the MAC address of its NIC, is used
+to identify it. Do you recall IP protocol? IP protocol identifies a machine with its IP
+address to route the packets.
+MAC address is used only when a specific machine is to be targeted. For example,
+suppose we want to block a specific PC to access some network resource. If we use the
+PCs IP address, then the PC is not blocked permanently as its IP address may change
+when it connects to the network next time. Instead, if the PCs MAC address is used for
+the purpose, then the job is done!
+An IP (Internet Protocol) address is a unique 4 digit hexadecimal number assigned to
+each node on a network. IP address settings of a node can be changed by the user You
+might wonder how an IP address differs from a MAC address. In fact, the IP address is
+assigned by the network administrator or the internet service provider while the MAC
+address is assigned by the manufacturer. Thus if a computer is transferred from one
+network to another, its IP address gets changed whereas the MAC address remains the
+same. From the IP address it is usually possible to track the tentative location of the
+computer but this is not the case with a MAC address.
+</li>
+</td>
+<td><img height = 240 width= 350 src="download (2).png"></td>
+</tr>
+<tr>
+<td>
+<li><b> Domain Name</b>
+So, whenever we have to communicate with a computer on the internet, we can do so
+by using its IP address. But it is practically impossible for a person to remember the IP
+addresses of all the computers one may have to communicate with. Therefore, a
+system has been developed which assigns names to some computers (web servers)
+and maintains a database of these names and corresponding IP addresses. These
+names are called Domain Names. Examples of some domain names are cbse.nic.in,
+sikkimipr.org, indianrailway.gov.in etc. Domain names are used in URLs to identify
+particular Web servers. For example, in the URL http://www.cbse.nic.in/welcome.htm,
+the domain name is www.cbse.nic.in.
+A domain name usually has more than one parts: top level domain name or primary
+domain name and sub-domain name(s). For example, in the domain name , in is the
+primary domain name; nic is the sub-domain of in; cbse is the sub-domain of nic.There
+are only a limited number of top level domains, and these are divided into two
+categories: Generic Domain Names and Country-Specific Domain Names. For example
+Generic Domain Names:<br>
+·com - commercial business<br>
+<br>·edu - Educational institutions
+<br>·gov - Government agencies
+<br>·mil - Military
+<br>·net - Network organizations
+<br>·org - Organizations (nonprofit)
+<br><br><b>Country Specific Domain Names:</b><br>
+<br>.in - India
+<br>·au - Australia
+<br>·ca - Canada
+<br>.ch - China
+<br>.nz - New Zealand
+<br>.pk - Pakistan
+<br>.jp - Japan
+<br>.us - United States of America
+</li></td>
+<td><img height = 240 width= 350 src="download (1).jpg"></td>
+</tr>
+<tr>
+<td>
+
+<li><b> Domain Name Resolution</b> is the process of getting the corresponding IP
+address from domain name. It happens as follows:<br>
+Suppose you mention a URL in the web-browser to visit a website. The browser first
+checks your computer to find if the IP address of the server corresponding to the
+Domain Name (embedded in the URL) is present. If this address is present then with
+the help of this address, the corresponding server is contacted and then the website
+opens in your browser. Otherwise the browser sends this domain name to some specific
+servers (called domain name servers) to find the corresponding IP address. Once the IP
+address is known, the server is contacted and then the website opens in your browser.
+</li>
+</td>
+<td><img height = 240 width= 350 src="download (3).png"></td>
+</tr></ul>
+</table>
+
+<center>
+<div class="row">
+<div class="column" style="background-color:black">
+<font color="white">
+<footer>
+<form><br><br>
+<a href="net concept.html">
+<input  style="height:40px;width:100px" type=reset value="Previous">
+<a href="no5.html">
+<input  style="height:40px;width:100px" type=submit value="Next">
+</a>
+</form>
+Go to <a href="home.html  ">Home</a><br>
+Contact us <a href="mailto:rachitagarwal2005@gmail.com?subject=Further query">here</a>
+<br><br></footer>
+</font>
+</div>
+</div>
+</center>
+</body>
+</html>

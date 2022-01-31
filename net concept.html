@@ -1,0 +1,299 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f4f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6d;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="home.html">Home</a>
+  <a href="cont.html">Topics</a>
+  <a href="log in.html">Log In</a>
+  <a href="cred.html">Contact</a>
+</div>
+
+<div style="padding-left:16px">
+  </div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="Evolution.html">Evolution</a>
+  <a href="Basic Concept.html">Basic Networking Concept</a>
+  <a href="concept2.html">Networking Concepts-II</a>
+  <a href="net concept.html">Network Protocol</a>
+  <a href="web pro.html">Web Architecture</a>
+  <a href="no5.html">Network threats and Security Measures</a>
+</div>
+
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+
+<html>
+<head>
+<title>
+Network Protocols
+</title>
+</head>
+<body bgcolor="ffffe0">
+<h1><center><u>Network Protocols</u></center></h1>
+<br>
+<br>
+<p>Network protocols are formal standards and rules that define communication between
+two or more devices over a network. They ensure that computer network devices can
+transmit and receive data using a common language regardless of their different
+designs, hardware or infrastructures. Some of the protocols are listed below.
+</p>
+<p>
+Transmission Control Protocol / Internet protocol (TCP/IP) TCP/IP are the two protocols
+that are used together and together they form the backbone protocol of the internet.
+They can also be used for private networks i.e. intranets and extranets. When you are
+set up with direct access to the Internet, your computer is provided with a copy of the
+TCP/IP program TCP/IP has two major components:
+</p>
+<ol type="I">
+<table>
+<tr>
+<td>
+<li><b> Transmission Control Protocol (TCP)</b><br>
+TCP is a popular communication protocol which is used for communicating over a
+network. It divides any message into a series of packets that are sent from source to
+destination and there it gets reassembled at the destination.</li>
+<br><li><b>Internet Protocol (IP)</b><br>
+IP is designed explicitly as addressing protocol. It is mostly used with TCP. The IP
+addresses in packets help in routing them through different nodes in a network until it
+reaches the destination system. An IP address is a unique identifier for a node or host
+connection on an IP network. An IP address is a 32 bit binary number usually
+represented as 4 decimal values, each representing 8 bits, in the range 0 to 255 (known
+as octets) separated by decimal points. This is known as "dotted decimal" notation.
+Example: 140.179.220.200</li>
+<br><li><b> Point-to-Point Protocol</b><br>
+PPP (Point-to-Point Protocol) is used for communication between two computers using
+a serial interface, mostly a personal computer connected by phone line to a server. For
+example, an Internet Service Provider (ISP) may provide you with a PPP connection so
+that the ISP's server can respond to your requests, pass them on to the Internet, and
+forward your requested Internet responses back to you. It was basically designed to
+help communication between two systems through telephone lines as it supports
+transmission of network packets over a serial point to point link. PPP is sometimes
+considered a member of the TCP/IP suite of protocol</li>
+<br></td>
+<td><img height="250px" width="500px" src="maxresdefault.jpg">
+</td></tr>
+<tr>
+<td>
+<li>
+<b>HyperText Transfer Protocol (HTTP)
+</b><br>
+HTTP is designed for transferring a hypertext among two or more systems. HTML tags
+are used for creating links. These links may be in any form like text or images. HTTP is
+designed on Client-server principles which allow a client system for establishing a
+connection with the server machine for making a request. The server acknowledges the
+request initiated by the client and responds accordingly. HTTP has three important
+features. Firstly, it is connectionless. After a request is made, the client disconnects
+from the server and waits for a response. To process the request, the server has to reestablish
+the connection with the client. Secondly, HTTP is media independent. This
+means any type of data(text , images , sound , video etc.) can be sent by HTTP as long
+as both the client and server know how to handle the data content. Thirdly HTTP is
+stateless.This is because the server and the client are aware of each other only during a
+request. Afterwards, they get disconnected. Hence neither the client nor the browser
+can retain information between different requests across the web pages.
+HTTPS is abbreviated as HyperText Transfer Protocol Secure is a standard protocol to
+secure the communication among two computers one using the browser and other
+fetching data from a web server. HTTP is used for transferring data between the client
+browser (request) and the web server (response) in the hypertext format, same in case
+of HTTPS except that the transferring of data is done in an encrypted format. So it can
+be said that https thwart hackers from interpretation or modification of data throughout
+the transfer of packets.
+</li>
+<br><li><b>File Transfer Protocol (FTP)</b><br>
+FTP allows users to transfer files from one machine to another. Types of files may
+include program files, multimedia files, text files, and documents, etc.</li>
+<br><li><b>Simple mail transport Protocol (SMTP)</b><br>
+SMTP is designed to send and distribute outgoing EMail.SMTP is a reliable and easy to
+set up protocol. Messages either get to a recipient, or there is an error message that
+explains why that wasn't possible. One of the purposes of an SMTP is that it simplifies
+the communication of email messages between servers. It allows the server to break up
+different parts of a message into categories the other server can understand. Any email
+message has a sender, a recipient or sometimes multiple recipients - a message body,
+and usually a title heading. Once a message goes out on the internet, everything is
+turned into strings of text. This text is separated by code words or numbers that identify
+the purpose of each section of an email. SMTP provides those codes, and email server
+software is designed to interpret these codes. SMTP has a major disadvantage that it is
+relatively easy to send a message with a fake sender address. This results in the
+spread of many email-based viruses.</li>
+</td>
+<td><img height="250px" width="400px" src="download (5).png">
+</td>
+</tr>
+<br><tr>
+<td>
+<li><b>Post office Protocol (POP)</b><br>
+POP3 is designed for receiving incoming Emails. Post Office Protocol 3 or POP3 is the
+third version of a widespread method of receiving email which receives and holds email
+for an individual until they pick it up. SMTP has a disadvantage that if the destination
+computer is not online, mails cannot be received. So the SMTP server receives the mail
+on behalf of every host and the respective host then interacts with the SMTP server to
+retrieve messages by using a client server protocol called POP3.</li><br>
+
+<li><b> Telnet</b><br>
+Telnet is the main internet protocol for creating a connection with a remote machine. It
+allows you to connect to remote computers (called remote hosts) over a TCP/IP network
+(such as the Internet). Once your telnet client establishes a connection to the remote
+host, your client becomes a virtual terminal, allowing you to communicate with the
+remote host from your computer with whatever privileges you may have been granted to
+the specific application and data on that host computer.</li><br>
+
+<br><li><b>Internet Relay Chat (IRC)</b><br>
+IRC protocol is used for chatting. It provides chatting between a group or between two
+individuals. It was developed by JarkkoOikarinen in Finland in the late 1980s. It is based
+on the client/server model. The IRC client sends and receives messages to and from an
+IRC server. The IRC server transports the message from one client to another. The IRC
+server is linked to many other servers to form an IRC network. IRC server identifies
+every user through a unique nickname. Each user is assigned a unique channel in case
+multiple discussions are taking place.</li>
+</td>
+<td>
+<img height="250px" width="400px" src="images (1).png">
+</td>
+</tr>
+<tr>
+<td>
+<br><li><b> Voice over Internet Protocol (VoIP)</b><br>
+It enables the transfer of voice using a packet switched network rather than using a
+public switched telephone network. By using VOIP software, phone calls can be done
+using standard internet connection. This method of making phone calls is much cheaper
+than conventional way because the service of Telecommunication Company is not
+used.There are three different methods of VoIP service in common use today:</li>
+<ul>
+<li><b>ATA -</b><br>
+ATA stands for analog-to-digital converted. It is used to connect the telephone device
+to the computer. It takes the analog signals from the phone and converts them to digital
+signals. These digital signals can be transmitted over the internet. Some providers also
+are bundling ATAs free with their service.</li><br>
+<li><b>
+IP phones -</b><br>
+IP phones appear much like an ordinary telephone or cordless phone. They are directly
+connected to the router or the LAN. They have all the hardware and software necessary
+right onboard to handle the IP call. IP Phones are sometimes calledVoIP telephones,
+SIP phones or Soft phones.</li><br>
+<li><b> Computer-to-computer -</li></b>
+It is the most easy and simplest way to use VoIP. The basic hardware requirements are
+Computer, Internet, Speakers, Microphone. The only cost involved with computer - tocomputer
+VoIP is the monthly ISP fee.</li>
+</ul>
+</td>
+<td>
+<img src="download (2).jpg" height="250px" width="400px">
+</td>
+</tr>
+</ol>
+</table>
+</body>
+<center>
+<div class="row">
+<div class="column" style="background-color:black">
+<font color="white">
+<footer>
+<form><br><br>
+<a href="concept2.html">
+<input  style="height:40px;width:100px" type=reset value="Previous">
+<a href="web pro.html    ">
+<input  style="height:40px;width:100px" type=submit value="Next">
+</a>
+</form>
+Go to <a href="home.html  ">Home</a><br>
+Contact us <a href="mailto:rachitagarwal2005@gmail.com?subject=Further query">here</a>
+<br><br></footer>
+</font>
+</div>
+</div>
+</center>
+</html>

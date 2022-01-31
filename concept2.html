@@ -1,0 +1,281 @@
+﻿
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f4f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6d;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="home.html">Home</a>
+  <a href="cont.html">Topics</a>
+  <a href="log in.html">Log In</a>
+  <a href="cred.html">Contact</a>
+</div>
+
+<div style="padding-left:16px">
+  </div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="Evolution.html">Evolution</a>
+  <a href="Basic Concept.html">Basic Networking Concept</a>
+  <a href="concept2.html">Networking Concepts-II</a>
+  <a href="net concept.html">Network Protocol</a>
+  <a href="web pro.html">Web Architecture</a>
+  <a href="no5.html">Network threats and Security Measures</a>
+</div>
+
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+<html>
+<title>
+Networking Concept-II
+</title>
+</head>
+<body bgcolor="ffffe0">
+<u><center><h1>Networking Concepts-II</h1></center></u>
+<br>
+<br>
+A transmission medium refers to the channel of transmission through which data
+can be
+transmitted from one node to another in the form of signal. A signal encodes the data in
+a form suitable for transmission on the medium. A medium is characterized by its bandwidth defining the information carrying capacity of the medium. Common methods
+of Internet access by users include dial-up with a computer modem via telephone circuits, broadband over coaxial cable, fiber optics or copper wires,Wi-Fi, satellite, and
+cellular telephone technology (e.g. 3G, 4G).A transmission medium may belong to
+one of the following two categories:
+<ul>
+<li><b>Guided Medium:</b>The term refers to physical conductors such as twisted pairs,
+coaxial cable, and fiber optics. In twisted pair and coaxial cable, the signal travels
+ as voltage and current signal whereas in optical fibre,the signal is in the form of light.</li>
+<li><b>Unguided Medium:</b> The unguided medium uses electromagnetic waves that do
+not require a physical conductor. Examples of unguided medium include microwave, radio wave,infrared.</li>
+</ul>
+<br>
+<table>
+<ol>
+<tr>
+<td>
+<h3><li>Network Topologies</li></h3><br>
+The arrangement (also called layout) of nodes in a network is called network topology.
+There are broadly two types of topologies broadcast and point to point.
+In broadcast topology, all nodes share the same physical link. When one node transmits, all nodes receive.Collision may occur when more than one node
+simultaneously transmits, and there is a collision resolution mechanism for handling it.Broadcast topologies are mainly bus and ring. In point to pount topology,every pair of
+nodes has a dedicated link.Popular point to point topologies are :-
+<br>
+<br>
+<ul>
+<li><b>Bus Topology</b>:-In bus topology, there is a long cable, called backbone cable (or simply backbone), that
+connects various nodes through a connector called tap .In this,a message sent by one is received by all devices connected to backbone cable. This
+topology requires less cabling and is easy to install and extend the network laid using it.however,fault detection and isolation is difficult.</li>
+<br>
+<li><b>Ring Topology</b>:- In a ring topology,all the devices are attached through a cable in the form of ring.The message to be communicated is transmitted in one direction 
+and isolation is easy. However, the topology suffers from the limitation of single point failure leading to disruption of the entire network sending a
+message from one node to another node may take more time .</li>
+<br>
+<li><b>Star Topology</b>:-In star topology, all the devices are connected to the central controller called hub communication between any two 
+devices takes place through the hub responsible for relaying messages.
+Star network can be easily installed and configured also.Also, fault detection and isolation is easy. However, it requires more cabling
+as compared to bus and ring topology.Also, hub failure will lead to network failure
+</li>
+<br>
+<li><b>Mesh Topology</b>:- In mesh topology, every node is connected with every other node in the network as
+shown in Figure 1.13 Because of dedicated point to point connection between every possible pair of nodes, 
+the topology provides secure data transfer without any traffic
+problem. it requires a large number of connections to establish the topology. This leads
+to difficulty in installation as the number of nodes grow as the network grows.</li>
+<br>
+<li><b>Tree Topology</b>:-tree topology is a hybrid topology using a combination of star and bus topology. 
+Backbone cable in a bus topology acts like the stem of the tree, and star
+networks (and even individual nodes) are connected to the main backbone
+cable like the branches of tree.
+damage to a segment of a network laid using tree topology
+will not affect other segments.installation and configuration is 
+difficult as compared to other topologies. also, 
+if the backbone cable is damaged, the entire network communication is disrupted
+</li><br>
+</ul></td>
+<td><img height="300px" width="500px" src="download (6).png"></tr>
+<tr>
+<td>
+<h3><li>Network Devices</li></h3><br>
+<ul>
+Creation of a network requires various network devices,
+each of which plays a specific role in the network.
+<li><b>Repeater</b>:-With increase in distance, a signal may become weak and distorted. 
+A repeater is used to restore the input signal to its original form, so that it can travel a larger distance.
+Thus, it is placed between two cable segments It is also known
+as digital regenerator which reshapes and amplifies the digital signal.
+</li><br>
+<li><b>Hub</b>:-Unlike a repeater which connects two cables, a hub connects several lines,
+ also called,cable segments. A hub comprises several input/output (I/O) ports, each of which
+connects to a single cable . Data arriving on an incoming line is
+output to all lines except the line on which the hub receives the data.
+</li><br>
+<li><b>Bridge</b>:-A bridge is a multiport device used for connecting two or more local area networks
+ (LAN), possibly operating at different speeds as shown in Figure 1.6 Thus, a bridge may
+be used to produce bigger LAN by combining smaller LANs. A bridge enables devices
+on one LAN segment to communicate with the devices on another LAN segment. Unlike
+hubs, they are intelligent devices which exercise discretion while forwarding data to the
+outgoing line leading to the destination.</li>
+<br>
+<li><b>Switch</b>:-Unlike bridges which connect two or more LAN
+segments, switches are used to connect
+individual nodes in the network with each other. Each node within network is connected
+to a unique port in the switch.
+On receiving the incoming dataframe, it forwards it to only a single line co
+nnecting to the destination node. All the nodes connected through switch forms only one LAN.
+</li>
+<br>
+<li><b>Router</b>:-Routers are used for connecting various networks (LAN or WAN) with each other 
+A router maintains a routing table of various networks. Based on the destination
+address, the router determines to which network the incoming packet should be transmitted.</li>
+<br>
+<li><b>Gateway</b>:-Gateway connects networks based on different protocol technologies to communicate
+with each other. Data coming from one network operating on one protocol is converted
+according to the protocol of the outgoing network, and then
+forwarded. Thus a gateway may be thought of as a router equipped with software for protocol conversion.
+</li>
+<br>
+<li><b>RJ-45</B>:-
+RJ-45,short form of Registered Jack-45, is an eigth wired connector that is used to connect computers on a local area network(LAN),
+especially Ethernet.RJ-45 connectors look similar to the RJ-11 connector used for connecting telephone equipment,but they are somewhat wider.
+</li><br>
+<li><b>Wi-Fi Card</b>:Wi-Fi cards are small and portable cards that allow your desktop or laptop computer to
+connect to the internet through a wireless network. Wi-Fi transmission is through the
+use of radio waves. The antenna transmits the radio signals and these signals are
+picked up by Wi-Fi receivers such as computers and cell phones equipped with Wi-Fi
+cards. These devices have to be within the range of a Wi-Fi network to receive the
+signals. The Wi-Fi card then reads the signals and produces a wireless internet
+connection. Many newer computers, mobile devices etc. are equipped with wireless
+networking capability and do not require a Wi-Fi card.
+</li>
+</ul>
+</td>
+<td><img height="300px" width="500px" src="download (7).png"></tr>
+</table>
+</body>
+<center>
+<div class="row">
+<div class="column" style="background-color:black">
+<font  color="white">
+<footer>
+<form><br><br>
+<a href="Basic Concept.html">
+<input  style="height:40px;width:100px" type=reset value="Previous">
+<a href="web pro.html">
+<input  style="height:40px;width:100px" type=submit value="Next">
+</a>
+</form>
+Go to <a href="home.html  ">Home</a><br>
+Contact us <a href="mailto:rachitagarwal2005@gmail.com?subject=Further query">here</a>
+<br><br></footer>
+</font>
+</div>
+</div>
+</center>
+</html>
